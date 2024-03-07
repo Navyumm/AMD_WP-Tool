@@ -20,7 +20,7 @@ npm install axios
 npm install opn
 npm install readline-sync
 clear
-echo -e "\033[1;32m obrigado por instalar!!!"
+echo -e "\033[1;32m Thank you for installing!!!"
 echo -e "\033[1;32m #######################"
 echo -e "\u001b[0m "
 npm start

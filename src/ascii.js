@@ -29,24 +29,24 @@ const menu=function(){
 _______whatsapp tools_________
 |                            |
 | [1]=>wa.me                 | 
-| [2]=>gerador de menu       |
-| [3]=>gerador de aviso      |
-| [4]=>Desativar numero      |
-| [5]=>Desbanir numero       |
+| [2]=>Menu Generator        |
+| [3]=>Notice Generator      |
+| [4]=>Deactivate Number     |
+| [5]=>Unban Number          |
 |____________________________|
 
 \u001b[0m
-  [9]=> criador
-  [0]=>sair
+  [9]=> creator
+  [0]=> exit
   \u001b[0m`
 }
-const warking=(aviso)=>{
-let avisoc=aviso.replace('.','\n')
+const warking = (notice) => {
+  let formattedNotice = notice.replace('.', '\n');
   return `
   \u001b[31m
   @________________Aviso_______________@
   
-  ${avisoc}
+  ${formattedNotice}
   
   
   ~by                                      
@@ -57,4 +57,4 @@ let avisoc=aviso.replace('.','\n')
        `
 }
 
-module.exports={logo:logo,menu:menu,aviso:warking}
+module.exports = { logo: logo, menu: menu, notice: warking };

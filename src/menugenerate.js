@@ -1,18 +1,19 @@
-const generate=function(name,rules){
-    let menu=`✪࿇_____${name}_____࿇✪\n|`
-   
-    for(let i in rules){
-        menu+=`\n|-✦ ${rules[i]}\n|`
+const generateMenu = function (name, rules) {
+    let menu = `✪࿇_____${name}_____࿇✪\n|`;
+
+    for (let i in rules) {
+        menu += `\n|-✦ ${rules[i]}\n|`;
     }
-    return menu
-}
-const warking=function(aviso){
+    return menu;
+};
+
+const warking = function (notice) {
     return `
-    ❗🚨🚨[AVISO]🚨🚨❗
+    ❗🚨🚨[NOTICE]🚨🚨❗
     
-     "${aviso}"
-    
-    
-    `
-}
-module.exports={genemenu:generate,aviso:warking}
+    "${notice}"
+
+    `;
+};
+
+module.exports = { generateMenu: generateMenu, notice: warking };
